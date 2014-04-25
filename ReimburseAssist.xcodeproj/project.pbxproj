@@ -19,6 +19,7 @@
 		B9B4AE6B1909618F00DF285F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B4AE531909618F00DF285F /* UIKit.framework */; };
 		B9B4AE731909618F00DF285F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9B4AE711909618F00DF285F /* InfoPlist.strings */; };
 		B9B4AE751909618F00DF285F /* ReimburseAssistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B4AE741909618F00DF285F /* ReimburseAssistTests.m */; };
+		B9B4AE801909625500DF285F /* SFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B4AE7F1909625500DF285F /* SFHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		B9B4AE701909618F00DF285F /* ReimburseAssistTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReimburseAssistTests-Info.plist"; sourceTree = "<group>"; };
 		B9B4AE721909618F00DF285F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B9B4AE741909618F00DF285F /* ReimburseAssistTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReimburseAssistTests.m; sourceTree = "<group>"; };
+		B9B4AE7E1909625500DF285F /* SFHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHomeViewController.h; sourceTree = "<group>"; };
+		B9B4AE7F1909625500DF285F /* SFHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				B9B4AE5F1909618F00DF285F /* SFAppDelegate.m */,
 				B9B4AE611909618F00DF285F /* Images.xcassets */,
 				B9B4AE561909618F00DF285F /* Supporting Files */,
+				B9B4AE7E1909625500DF285F /* SFHomeViewController.h */,
+				B9B4AE7F1909625500DF285F /* SFHomeViewController.m */,
 			);
 			path = ReimburseAssist;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9B4AE5C1909618F00DF285F /* main.m in Sources */,
+				B9B4AE801909625500DF285F /* SFHomeViewController.m in Sources */,
 				B9B4AE601909618F00DF285F /* SFAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,9 +366,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ReimburseAssist/ReimburseAssist-Prefix.pch";
 				INFOPLIST_FILE = "ReimburseAssist/ReimburseAssist-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -373,9 +381,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ReimburseAssist/ReimburseAssist-Prefix.pch";
 				INFOPLIST_FILE = "ReimburseAssist/ReimburseAssist-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

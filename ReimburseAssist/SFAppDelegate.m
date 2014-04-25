@@ -7,14 +7,17 @@
 //
 
 #import "SFAppDelegate.h"
-
+#import "SFHomeViewController.h"
 @implementation SFAppDelegate
-
+@synthesize viewController = _viewController;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    _viewController = [[SFHomeViewController alloc] init];
+    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:_viewController];
+    self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
     return YES;
 }
