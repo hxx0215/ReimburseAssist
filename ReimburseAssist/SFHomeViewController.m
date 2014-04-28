@@ -7,7 +7,7 @@
 //
 
 #import "SFHomeViewController.h"
-
+#import "SFReimburseAssistCore.h"
 @interface SFHomeViewController ()
 
 @end
@@ -28,6 +28,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    SFReimburseAssistCore *core = [[SFReimburseAssistCore alloc] init];
+    core.coefficient = [[NSMutableArray alloc] init];
+    for (int i=9;i>0;i--)
+        [core.coefficient addObject:[NSNumber numberWithInt:i*9]];
+    [core sort];
 }
 
 - (void)didReceiveMemoryWarning

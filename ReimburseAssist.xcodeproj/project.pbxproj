@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9AE6D84190E9821008BDC0C /* SFReimburseAssistCore.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE6D83190E9821008BDC0C /* SFReimburseAssistCore.m */; };
 		B9B4AE501909618F00DF285F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B4AE4F1909618F00DF285F /* Foundation.framework */; };
 		B9B4AE521909618F00DF285F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B4AE511909618F00DF285F /* CoreGraphics.framework */; };
 		B9B4AE541909618F00DF285F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B4AE531909618F00DF285F /* UIKit.framework */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B9AE6D82190E9821008BDC0C /* SFReimburseAssistCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFReimburseAssistCore.h; sourceTree = "<group>"; };
+		B9AE6D83190E9821008BDC0C /* SFReimburseAssistCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFReimburseAssistCore.m; sourceTree = "<group>"; };
 		B9B4AE4C1909618F00DF285F /* ReimburseAssist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReimburseAssist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B4AE4F1909618F00DF285F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B9B4AE511909618F00DF285F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -112,10 +115,12 @@
 			children = (
 				B9B4AE5E1909618F00DF285F /* SFAppDelegate.h */,
 				B9B4AE5F1909618F00DF285F /* SFAppDelegate.m */,
+				B9AE6D82190E9821008BDC0C /* SFReimburseAssistCore.h */,
+				B9AE6D83190E9821008BDC0C /* SFReimburseAssistCore.m */,
 				B9B4AE611909618F00DF285F /* Images.xcassets */,
-				B9B4AE561909618F00DF285F /* Supporting Files */,
 				B9B4AE7E1909625500DF285F /* SFHomeViewController.h */,
 				B9B4AE7F1909625500DF285F /* SFHomeViewController.m */,
+				B9B4AE561909618F00DF285F /* Supporting Files */,
 			);
 			path = ReimburseAssist;
 			sourceTree = "<group>";
@@ -246,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9B4AE5C1909618F00DF285F /* main.m in Sources */,
+				B9AE6D84190E9821008BDC0C /* SFReimburseAssistCore.m in Sources */,
 				B9B4AE801909625500DF285F /* SFHomeViewController.m in Sources */,
 				B9B4AE601909618F00DF285F /* SFAppDelegate.m in Sources */,
 			);
@@ -450,6 +456,7 @@
 				B9B4AE7A1909618F00DF285F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9B4AE7B1909618F00DF285F /* Build configuration list for PBXNativeTarget "ReimburseAssistTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +465,7 @@
 				B9B4AE7D1909618F00DF285F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
