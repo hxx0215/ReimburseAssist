@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SFHomeViewController : UIViewController
-
+@interface SFHomeViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
+}
+@property (nonatomic, retain) UITableView *tableView;
 @end

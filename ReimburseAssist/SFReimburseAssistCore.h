@@ -11,5 +11,6 @@
 @interface SFReimburseAssistCore : NSObject
 @property (nonatomic,retain) NSMutableArray *coefficient;
 @property (nonatomic,assign) double total;
+@property (nonatomic,assign) NSMutableArray *x;
 - (void)sort;
 @end
