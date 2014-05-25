@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B9421EF5192E49D300A846CF /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = B9421EF4192E49D300A846CF /* add.png */; };
+		B9421EF7192E49EB00A846CF /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = B9421EF6192E49EB00A846CF /* delete.png */; };
+		B962540C19318D6500391942 /* ReimburseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B962540B19318D6500391942 /* ReimburseTableViewCell.m */; };
+		B9AE6D84190E9821008BDC0C /* SFReimburseAssistCore.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE6D83190E9821008BDC0C /* SFReimburseAssistCore.m */; };
+		B9B4AE501909618F00DF285F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B4AE4F1909618F00DF285F /* Foundation.framework */; };
+		B9B4AE521909618F00DF285F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B4AE511909618F00DF285F /* CoreGraphics.framework */; };
+		B9B4AE541909618F00DF285F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B4AE531909618F00DF285F /* UIKit.framework */; };
+		B9B4AE5A1909618F00DF285F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9B4AE581909618F00DF285F /* InfoPlist.strings */; };
+		B9B4AE5C1909618F00DF285F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B4AE5B1909618F00DF285F /* main.m */; };
+		B9B4AE601909618F00DF285F /* SFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B4AE5F1909618F00DF285F /* SFAppDelegate.m */; };
+		B9B4AE621909618F00DF285F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9B4AE611909618F00DF285F /* Images.xcassets */; };
+		B9B4AE691909618F00DF285F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B4AE681909618F00DF285F /* XCTest.framework */; };
+		B9B4AE6A1909618F00DF285F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B4AE4F1909618F00DF285F /* Foundation.framework */; };
+		B9B4AE6B1909618F00DF285F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B4AE531909618F00DF285F /* UIKit.framework */; };
+		B9B4AE731909618F00DF285F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9B4AE711909618F00DF285F /* InfoPlist.strings */; };
+		B9B4AE751909618F00DF285F /* ReimburseAssistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B4AE741909618F00DF285F /* ReimburseAssistTests.m */; };
+		B9B4AE801909625500DF285F /* SFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B4AE7F1909625500DF285F /* SFHomeViewController.m */; };
+		B9EB72DA192CCF7600D6A1F5 /* ReimburseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EB72D9192CCF7600D6A1F5 /* ReimburseTableViewController.m */; };
+		DAF9061BEBD3488DADCB5654 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FDC4FC4DDB4488ABB89B80A /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9B4AE6C1909618F00DF285F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9B4AE441909618F00DF285F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9B4AE4B1909618F00DF285F;
+			remoteInfo = ReimburseAssist;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9FDC4FC4DDB4488ABB89B80A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE1B42F3FCB247318969AC2C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		B9421EF4192E49D300A846CF /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		B9421EF6192E49EB00A846CF /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		B962540A19318D6500391942 /* ReimburseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReimburseTableViewCell.h; sourceTree = "<group>"; };
+		B962540B19318D6500391942 /* ReimburseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReimburseTableViewCell.m; sourceTree = "<group>"; };
+		B9AE6D82190E9821008BDC0C /* SFReimburseAssistCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFReimburseAssistCore.h; sourceTree = "<group>"; };
+		B9AE6D83190E9821008BDC0C /* SFReimburseAssistCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFReimburseAssistCore.m; sourceTree = "<group>"; };
+		B9B4AE4C1909618F00DF285F /* ReimburseAssist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReimburseAssist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B4AE4F1909618F00DF285F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B9B4AE511909618F00DF285F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B9B4AE531909618F00DF285F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B9B4AE571909618F00DF285F /* ReimburseAssist-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReimburseAssist-Info.plist"; sourceTree = "<group>"; };
+		B9B4AE591909618F00DF285F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B9B4AE5B1909618F00DF285F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9B4AE5D1909618F00DF285F /* ReimburseAssist-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReimburseAssist-Prefix.pch"; sourceTree = "<group>"; };
+		B9B4AE5E1909618F00DF285F /* SFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFAppDelegate.h; sourceTree = "<group>"; };
+		B9B4AE5F1909618F00DF285F /* SFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFAppDelegate.m; sourceTree = "<group>"; };
+		B9B4AE611909618F00DF285F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B9B4AE671909618F00DF285F /* ReimburseAssistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReimburseAssistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B4AE681909618F00DF285F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B9B4AE701909618F00DF285F /* ReimburseAssistTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReimburseAssistTests-Info.plist"; sourceTree = "<group>"; };
+		B9B4AE721909618F00DF285F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B9B4AE741909618F00DF285F /* ReimburseAssistTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReimburseAssistTests.m; sourceTree = "<group>"; };
+		B9B4AE7E1909625500DF285F /* SFHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHomeViewController.h; sourceTree = "<group>"; };
+		B9B4AE7F1909625500DF285F /* SFHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHomeViewController.m; sourceTree = "<group>"; };
+		B9EB72D8192CCF7600D6A1F5 /* ReimburseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReimburseTableViewController.h; sourceTree = "<group>"; };
+		B9EB72D9192CCF7600D6A1F5 /* ReimburseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReimburseTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9B4AE491909618F00DF285F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B4AE521909618F00DF285F /* CoreGraphics.framework in Frameworks */,
+				B9B4AE541909618F00DF285F /* UIKit.framework in Frameworks */,
+				B9B4AE501909618F00DF285F /* Foundation.framework in Frameworks */,
+				DAF9061BEBD3488DADCB5654 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B4AE641909618F00DF285F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B4AE691909618F00DF285F /* XCTest.framework in Frameworks */,
+				B9B4AE6B1909618F00DF285F /* UIKit.framework in Frameworks */,
+				B9B4AE6A1909618F00DF285F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9421EF3192E49A000A846CF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B9421EF6192E49EB00A846CF /* delete.png */,
+				B9421EF4192E49D300A846CF /* add.png */,
+			);
+			name = Resources;
+			path = ReimburseAssist;
+			sourceTree = "<group>";
+		};
+		B9B4AE431909618F00DF285F = {
+			isa = PBXGroup;
+			children = (
+				B9B4AE551909618F00DF285F /* ReimburseAssist */,
+				B9B4AE6E1909618F00DF285F /* ReimburseAssistTests */,
+				B9B4AE4E1909618F00DF285F /* Frameworks */,
+				B9421EF3192E49A000A846CF /* Resources */,
+				B9B4AE4D1909618F00DF285F /* Products */,
+				AE1B42F3FCB247318969AC2C /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		B9B4AE4D1909618F00DF285F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9B4AE4C1909618F00DF285F /* ReimburseAssist.app */,
+				B9B4AE671909618F00DF285F /* ReimburseAssistTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9B4AE4E1909618F00DF285F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9B4AE4F1909618F00DF285F /* Foundation.framework */,
+				B9B4AE511909618F00DF285F /* CoreGraphics.framework */,
+				B9B4AE531909618F00DF285F /* UIKit.framework */,
+				B9B4AE681909618F00DF285F /* XCTest.framework */,
+				9FDC4FC4DDB4488ABB89B80A /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9B4AE551909618F00DF285F /* ReimburseAssist */ = {
+			isa = PBXGroup;
+			children = (
+				B9B4AE5E1909618F00DF285F /* SFAppDelegate.h */,
+				B9B4AE5F1909618F00DF285F /* SFAppDelegate.m */,
+				B9AE6D82190E9821008BDC0C /* SFReimburseAssistCore.h */,
+				B9AE6D83190E9821008BDC0C /* SFReimburseAssistCore.m */,
+				B9B4AE611909618F00DF285F /* Images.xcassets */,
+				B9B4AE7E1909625500DF285F /* SFHomeViewController.h */,
+				B9B4AE7F1909625500DF285F /* SFHomeViewController.m */,
+				B9EB72D8192CCF7600D6A1F5 /* ReimburseTableViewController.h */,
+				B9EB72D9192CCF7600D6A1F5 /* ReimburseTableViewController.m */,
+				B962540A19318D6500391942 /* ReimburseTableViewCell.h */,
+				B962540B19318D6500391942 /* ReimburseTableViewCell.m */,
+				B9B4AE561909618F00DF285F /* Supporting Files */,
+			);
+			path = ReimburseAssist;
+			sourceTree = "<group>";
+		};
+		B9B4AE561909618F00DF285F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9B4AE571909618F00DF285F /* ReimburseAssist-Info.plist */,
+				B9B4AE581909618F00DF285F /* InfoPlist.strings */,
+				B9B4AE5B1909618F00DF285F /* main.m */,
+				B9B4AE5D1909618F00DF285F /* ReimburseAssist-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9B4AE6E1909618F00DF285F /* ReimburseAssistTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9B4AE741909618F00DF285F /* ReimburseAssistTests.m */,
+				B9B4AE6F1909618F00DF285F /* Supporting Files */,
+			);
+			path = ReimburseAssistTests;
+			sourceTree = "<group>";
+		};
+		B9B4AE6F1909618F00DF285F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9B4AE701909618F00DF285F /* ReimburseAssistTests-Info.plist */,
+				B9B4AE711909618F00DF285F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9B4AE4B1909618F00DF285F /* ReimburseAssist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9B4AE781909618F00DF285F /* Build configuration list for PBXNativeTarget "ReimburseAssist" */;
+			buildPhases = (
+				F087F75A6A6A482FA05463C5 /* Check Pods Manifest.lock */,
+				B9B4AE481909618F00DF285F /* Sources */,
+				B9B4AE491909618F00DF285F /* Frameworks */,
+				B9B4AE4A1909618F00DF285F /* Resources */,
+				1C4A689F730340D1BFFB0670 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReimburseAssist;
+			productName = ReimburseAssist;
+			productReference = B9B4AE4C1909618F00DF285F /* ReimburseAssist.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9B4AE661909618F00DF285F /* ReimburseAssistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9B4AE7B1909618F00DF285F /* Build configuration list for PBXNativeTarget "ReimburseAssistTests" */;
+			buildPhases = (
+				B9B4AE631909618F00DF285F /* Sources */,
+				B9B4AE641909618F00DF285F /* Frameworks */,
+				B9B4AE651909618F00DF285F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9B4AE6D1909618F00DF285F /* PBXTargetDependency */,
+			);
+			name = ReimburseAssistTests;
+			productName = ReimburseAssistTests;
+			productReference = B9B4AE671909618F00DF285F /* ReimburseAssistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9B4AE441909618F00DF285F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SF;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = hxx;
+				TargetAttributes = {
+					B9B4AE661909618F00DF285F = {
+						TestTargetID = B9B4AE4B1909618F00DF285F;
+					};
+				};
+			};
+			buildConfigurationList = B9B4AE471909618F00DF285F /* Build configuration list for PBXProject "ReimburseAssist" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B9B4AE431909618F00DF285F;
+			productRefGroup = B9B4AE4D1909618F00DF285F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9B4AE4B1909618F00DF285F /* ReimburseAssist */,
+				B9B4AE661909618F00DF285F /* ReimburseAssistTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9B4AE4A1909618F00DF285F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B4AE5A1909618F00DF285F /* InfoPlist.strings in Resources */,
+				B9B4AE621909618F00DF285F /* Images.xcassets in Resources */,
+				B9421EF7192E49EB00A846CF /* delete.png in Resources */,
+				B9421EF5192E49D300A846CF /* add.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B4AE651909618F00DF285F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B4AE731909618F00DF285F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C4A689F730340D1BFFB0670 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F087F75A6A6A482FA05463C5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9B4AE481909618F00DF285F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B4AE5C1909618F00DF285F /* main.m in Sources */,
+				B9AE6D84190E9821008BDC0C /* SFReimburseAssistCore.m in Sources */,
+				B962540C19318D6500391942 /* ReimburseTableViewCell.m in Sources */,
+				B9B4AE801909625500DF285F /* SFHomeViewController.m in Sources */,
+				B9EB72DA192CCF7600D6A1F5 /* ReimburseTableViewController.m in Sources */,
+				B9B4AE601909618F00DF285F /* SFAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B4AE631909618F00DF285F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B4AE751909618F00DF285F /* ReimburseAssistTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9B4AE6D1909618F00DF285F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9B4AE4B1909618F00DF285F /* ReimburseAssist */;
+			targetProxy = B9B4AE6C1909618F00DF285F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B9B4AE581909618F00DF285F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9B4AE591909618F00DF285F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B9B4AE711909618F00DF285F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9B4AE721909618F00DF285F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9B4AE761909618F00DF285F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B9B4AE771909618F00DF285F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9B4AE791909618F00DF285F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE1B42F3FCB247318969AC2C /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReimburseAssist/ReimburseAssist-Prefix.pch";
+				INFOPLIST_FILE = "ReimburseAssist/ReimburseAssist-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B9B4AE7A1909618F00DF285F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE1B42F3FCB247318969AC2C /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReimburseAssist/ReimburseAssist-Prefix.pch";
+				INFOPLIST_FILE = "ReimburseAssist/ReimburseAssist-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B9B4AE7C1909618F00DF285F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ReimburseAssist.app/ReimburseAssist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReimburseAssist/ReimburseAssist-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ReimburseAssistTests/ReimburseAssistTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B9B4AE7D1909618F00DF285F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ReimburseAssist.app/ReimburseAssist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReimburseAssist/ReimburseAssist-Prefix.pch";
+				INFOPLIST_FILE = "ReimburseAssistTests/ReimburseAssistTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9B4AE471909618F00DF285F /* Build configuration list for PBXProject "ReimburseAssist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9B4AE761909618F00DF285F /* Debug */,
+				B9B4AE771909618F00DF285F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9B4AE781909618F00DF285F /* Build configuration list for PBXNativeTarget "ReimburseAssist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9B4AE791909618F00DF285F /* Debug */,
+				B9B4AE7A1909618F00DF285F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9B4AE7B1909618F00DF285F /* Build configuration list for PBXNativeTarget "ReimburseAssistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9B4AE7C1909618F00DF285F /* Debug */,
+				B9B4AE7D1909618F00DF285F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9B4AE441909618F00DF285F /* Project object */;
+}
