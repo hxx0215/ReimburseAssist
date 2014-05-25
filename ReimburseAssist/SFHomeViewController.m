@@ -8,8 +8,10 @@
 
 #import "SFHomeViewController.h"
 #import "SFReimburseAssistCore.h"
+#import "ReimburseTableViewController.h"
 @interface SFHomeViewController (){
     NSMutableArray *_coefficient;
+    ReimburseTableViewController *_reimbursetVCtrl;
 }
 
 @end
@@ -31,6 +33,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"报账小助手";
+    self.view.backgroundColor = [UIColor clearColor];
     SFReimburseAssistCore *core = [[SFReimburseAssistCore alloc] init];
     core.coefficient = [[NSMutableArray alloc] init];
     for (int i=9;i>0;i--)
@@ -41,13 +44,13 @@
     [self.view addSubview:_tableView];
     _tableView.delegate = self;
     _tableView.dataSource = self;
-    
     UIBarButtonItem *addBtn = [[UIBarButtonItem alloc]
                                initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
                                target:self
                                action:@selector(addReimburseItem:)];
     self.navigationItem.rightBarButtonItem = addBtn;
     [addBtn release];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -58,12 +61,15 @@
 
 - (void)addReimburseItem:(id)sender
 {
-    
+    ReimburseTableViewController *reimbursetVCtrl = [[ReimburseTableViewController alloc] init];
+    reimbursetVCtrl.view.backgroundColor = [UIColor whiteColor];
+    [self.navigationController pushViewController:reimbursetVCtrl animated:YES];
+    [reimbursetVCtrl release];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [_coefficient count];
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

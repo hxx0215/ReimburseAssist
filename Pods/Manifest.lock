@@ -1,0 +1,10 @@
+PODS:
+  - GMGridView (1.1.1)
+
+DEPENDENCIES:
+  - GMGridView (~> 1.1.1)
+
+SPEC CHECKSUMS:
+  GMGridView: a17a31f010990eb8f802abb4cab50e6e03e993ea
+
+COCOAPODS: 0.32.1
