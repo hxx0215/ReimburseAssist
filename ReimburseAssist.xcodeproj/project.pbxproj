@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B9421EF5192E49D300A846CF /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = B9421EF4192E49D300A846CF /* add.png */; };
 		B9421EF7192E49EB00A846CF /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = B9421EF6192E49EB00A846CF /* delete.png */; };
 		B962540C19318D6500391942 /* ReimburseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B962540B19318D6500391942 /* ReimburseTableViewCell.m */; };
+		B962541B193345D100391942 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = B962541A193345D100391942 /* add.png */; };
 		B9AE6D84190E9821008BDC0C /* SFReimburseAssistCore.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE6D83190E9821008BDC0C /* SFReimburseAssistCore.m */; };
 		B9B4AE501909618F00DF285F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B4AE4F1909618F00DF285F /* Foundation.framework */; };
 		B9B4AE521909618F00DF285F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B4AE511909618F00DF285F /* CoreGraphics.framework */; };
@@ -41,10 +41,11 @@
 /* Begin PBXFileReference section */
 		9FDC4FC4DDB4488ABB89B80A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE1B42F3FCB247318969AC2C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		B9421EF4192E49D300A846CF /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		B9421EF6192E49EB00A846CF /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
 		B962540A19318D6500391942 /* ReimburseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReimburseTableViewCell.h; sourceTree = "<group>"; };
 		B962540B19318D6500391942 /* ReimburseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReimburseTableViewCell.m; sourceTree = "<group>"; };
+		B962540D1931D16600391942 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		B962541A193345D100391942 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		B9AE6D82190E9821008BDC0C /* SFReimburseAssistCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFReimburseAssistCore.h; sourceTree = "<group>"; };
 		B9AE6D83190E9821008BDC0C /* SFReimburseAssistCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFReimburseAssistCore.m; sourceTree = "<group>"; };
 		B9B4AE4C1909618F00DF285F /* ReimburseAssist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReimburseAssist.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,8 +98,8 @@
 		B9421EF3192E49A000A846CF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B962541A193345D100391942 /* add.png */,
 				B9421EF6192E49EB00A846CF /* delete.png */,
-				B9421EF4192E49D300A846CF /* add.png */,
 			);
 			name = Resources;
 			path = ReimburseAssist;
@@ -140,6 +141,7 @@
 		B9B4AE551909618F00DF285F /* ReimburseAssist */ = {
 			isa = PBXGroup;
 			children = (
+				B962540D1931D16600391942 /* Constants.h */,
 				B9B4AE5E1909618F00DF285F /* SFAppDelegate.h */,
 				B9B4AE5F1909618F00DF285F /* SFAppDelegate.m */,
 				B9AE6D82190E9821008BDC0C /* SFReimburseAssistCore.h */,
@@ -263,10 +265,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B962541B193345D100391942 /* add.png in Resources */,
 				B9B4AE5A1909618F00DF285F /* InfoPlist.strings in Resources */,
 				B9B4AE621909618F00DF285F /* Images.xcassets in Resources */,
 				B9421EF7192E49EB00A846CF /* delete.png in Resources */,
-				B9421EF5192E49D300A846CF /* add.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

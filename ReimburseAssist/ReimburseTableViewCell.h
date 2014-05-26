@@ -9,5 +9,6 @@
 #import "GMGridViewCell.h"
 
 @interface ReimburseTableViewCell : GMGridViewCell
-
+@property (nonatomic, retain) NSMutableDictionary *style;
+@property (nonatomic, retain) UILabel *label;
 @end
