@@ -10,6 +10,7 @@
 #import "GMGridView.h"
 #import "ReimburseTableViewCell.h"
 #import "Constants.h"
+#import "GridCellEditView.h"
 
 @interface ReimburseTableViewController () <GMGridViewDataSource, GMGridViewActionDelegate> {
 	__gm_weak GMGridView *_gridView;
@@ -54,6 +55,14 @@
     [super viewWillAppear:animated];
     [self.view addSubview:_gridView];
     [_gridView reloadData];
+}
+
+- (void)dealloc
+{
+    [_gridView release];
+    [_items release];
+    
+    [super dealloc];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -101,18 +110,16 @@
         [cellStyle setObject:[NSNumber numberWithBool:YES] forKey:kButtonShow];
     }
     cell.style = cellStyle;
+    [cellStyle release];
     return cell;
 }
 
 - (void)GMGridView:(GMGridView *)gridView didTapOnItemAtIndex:(NSInteger)position {
     NSLog(@"tap:%d",position);
+    //大小要重新调试
+    GridCellEditView *editView = [[GridCellEditView alloc]initWithFrame:CGRectMake(10, 100, 300, 200)];
+    [_gridView addSubview:editView];
+    [editView release];
 }
 
-- (UIImage *)imageScale:(UIImage *)img toSize:(CGSize)newsize {
-	UIGraphicsBeginImageContext(newsize);
-	[img drawInRect:CGRectMake(0, 0, newsize.width, newsize.height)];
-	UIImage *scaleimg = UIGraphicsGetImageFromCurrentImageContext();
-	UIGraphicsEndImageContext();
-	return scaleimg;
-}
 @end

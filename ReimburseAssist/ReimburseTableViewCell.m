@@ -10,7 +10,7 @@
 #import "Constants.h"
 
 @implementation ReimburseTableViewCell{
-    UIButton *_addBtn;
+    UILabel *_addBtn;
 }
 
 @synthesize style = _style;
@@ -32,18 +32,31 @@
     return self;
 }
 
+- (void)dealloc
+{
+    [_style release];
+    [_label release];
+    [_addBtn release];
+    
+    [super dealloc];
+}
+
 - (void)initLabel{
     _label = [[UILabel alloc] initWithFrame:self.bounds];
     _label.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    _label.textAlignment = NSTextAlignmentRight;
+    _label.textAlignment = NSTextAlignmentCenter;
     _label.textColor = [UIColor blackColor];
     _label.highlightedTextColor = [UIColor whiteColor];
     [self addSubview:_label];
 }
 - (void)initButton{
-    CGSize imgSize = CGSizeMake(25, 25);
-    _addBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, imgSize.width, imgSize.height)];
-    [_addBtn setBackgroundImage:[UIImage imageNamed:@"add.png"] forState:UIControlStateNormal];
+//    CGSize imgSize = CGSizeMake(25, 25);
+    _addBtn = [[UILabel alloc]initWithFrame:self.bounds];
+    _addBtn.text = @"点击添加";
+    _addBtn.textAlignment = NSTextAlignmentCenter;
+    _addBtn.textColor = [UIColor colorWithRed:0.7 green:.7 blue:0.7 alpha:.7];
+//    _addBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, imgSize.width, imgSize.height)];
+//    [_addBtn setBackgroundImage:[UIImage imageNamed:@"add.png"] forState:UIControlStateNormal];
     [self addSubview:_addBtn];
     _addBtn.center = self.center;
 }
