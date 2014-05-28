@@ -117,9 +117,14 @@
 - (void)GMGridView:(GMGridView *)gridView didTapOnItemAtIndex:(NSInteger)position {
     NSLog(@"tap:%d",position);
     //大小要重新调试
-    GridCellEditView *editView = [[GridCellEditView alloc]initWithFrame:CGRectMake(10, 100, 300, 200)];
+    GridCellEditView *editView = [[GridCellEditView alloc]initWithFrame:CGRectMake(10, 100, 300, 180)];
     [_gridView addSubview:editView];
+    editView.userInteractionEnabled =YES;
     [editView release];
 }
 
+- (void)GMGridViewDidTapOnEmptySpace:(GMGridView *)gridView
+{
+    NSLog(@"other");
+}
 @end
