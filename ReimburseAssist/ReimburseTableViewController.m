@@ -7,14 +7,15 @@
 //
 
 #import "ReimburseTableViewController.h"
-#import "GMGridView.h"
+#import "ReimburseTableView.h"
 #import "ReimburseTableViewCell.h"
 #import "Constants.h"
 #import "GridCellEditView.h"
 
-@interface ReimburseTableViewController () <GMGridViewDataSource, GMGridViewActionDelegate> {
-	__gm_weak GMGridView *_gridView;
+@interface ReimburseTableViewController () <GMGridViewDataSource, GMGridViewActionDelegate, UIGestureRecognizerDelegate> {
+	__gm_weak ReimburseTableView *_gridView;
     NSMutableArray *_items;
+    GridCellEditView *_editView;
 }
 
 @end
@@ -33,7 +34,7 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	// Do any additional setup after loading the view.
-    _gridView = [[GMGridView alloc] initWithFrame:self.view.bounds];
+    _gridView = [[ReimburseTableView alloc] initWithFrame:self.view.bounds];
     //gmGridView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     _gridView.backgroundColor = [UIColor clearColor];
     //[self.view addSubview:gmGridView];
@@ -47,6 +48,7 @@
     //_gridView.sortingDelegate = self;
     //_gridView.transformDelegate = self;
     _gridView.dataSource = self;
+    _gridView.mainSuperView = self.view;
     [_gridView reloadData];
 }
 
@@ -115,16 +117,29 @@
 }
 
 - (void)GMGridView:(GMGridView *)gridView didTapOnItemAtIndex:(NSInteger)position {
-    NSLog(@"tap:%d",position);
+    NSLog(@"tap:%ld",(long)position);
     //大小要重新调试
-    GridCellEditView *editView = [[GridCellEditView alloc]initWithFrame:CGRectMake(10, 100, 300, 180)];
-    [_gridView addSubview:editView];
-    editView.userInteractionEnabled =YES;
-    [editView release];
+    _editView = [[GridCellEditView alloc]initWithFrame:CGRectMake(10, 100, 300, 180)];
+    [_gridView addSubview:_editView];
+    _editView.userInteractionEnabled =YES;
+    [_editView release];
 }
 
 - (void)GMGridViewDidTapOnEmptySpace:(GMGridView *)gridView
 {
     NSLog(@"other");
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    NSLog(@"touchesbegan");
+}
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+{
+    NSLog(@"%@",NSStringFromCGPoint([gestureRecognizer locationInView:self.view]));
+    BOOL isTouchInEditView = [_editView gestureRecognizerShouldBegin:gestureRecognizer];
+    if (isTouchInEditView) NSLog(@"touchineditview");
+    else NSLog(@"noinview");
+    return YES;
 }
 @end

@@ -11,6 +11,7 @@
 		B962540C19318D6500391942 /* ReimburseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B962540B19318D6500391942 /* ReimburseTableViewCell.m */; };
 		B962541B193345D100391942 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = B962541A193345D100391942 /* add.png */; };
 		B962541E1933796000391942 /* GridCellEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = B962541D1933796000391942 /* GridCellEditView.m */; };
+		B98421C219384B5D004E014D /* ReimburseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B98421C119384B5D004E014D /* ReimburseTableView.m */; };
 		B9AE6D84190E9821008BDC0C /* SFReimburseAssistCore.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE6D83190E9821008BDC0C /* SFReimburseAssistCore.m */; };
 		B9B4AE501909618F00DF285F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B4AE4F1909618F00DF285F /* Foundation.framework */; };
 		B9B4AE521909618F00DF285F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B4AE511909618F00DF285F /* CoreGraphics.framework */; };
@@ -49,6 +50,8 @@
 		B962541A193345D100391942 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		B962541C1933796000391942 /* GridCellEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridCellEditView.h; sourceTree = "<group>"; };
 		B962541D1933796000391942 /* GridCellEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridCellEditView.m; sourceTree = "<group>"; };
+		B98421C019384B5D004E014D /* ReimburseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReimburseTableView.h; sourceTree = "<group>"; };
+		B98421C119384B5D004E014D /* ReimburseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReimburseTableView.m; sourceTree = "<group>"; };
 		B9AE6D82190E9821008BDC0C /* SFReimburseAssistCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFReimburseAssistCore.h; sourceTree = "<group>"; };
 		B9AE6D83190E9821008BDC0C /* SFReimburseAssistCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFReimburseAssistCore.m; sourceTree = "<group>"; };
 		B9B4AE4C1909618F00DF285F /* ReimburseAssist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReimburseAssist.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +159,8 @@
 				B9EB72D9192CCF7600D6A1F5 /* ReimburseTableViewController.m */,
 				B962540A19318D6500391942 /* ReimburseTableViewCell.h */,
 				B962540B19318D6500391942 /* ReimburseTableViewCell.m */,
+				B98421C019384B5D004E014D /* ReimburseTableView.h */,
+				B98421C119384B5D004E014D /* ReimburseTableView.m */,
 				B962541C1933796000391942 /* GridCellEditView.h */,
 				B962541D1933796000391942 /* GridCellEditView.m */,
 				B9B4AE561909618F00DF285F /* Supporting Files */,
@@ -325,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B98421C219384B5D004E014D /* ReimburseTableView.m in Sources */,
 				B9B4AE5C1909618F00DF285F /* main.m in Sources */,
 				B9AE6D84190E9821008BDC0C /* SFReimburseAssistCore.m in Sources */,
 				B962540C19318D6500391942 /* ReimburseTableViewCell.m in Sources */,
