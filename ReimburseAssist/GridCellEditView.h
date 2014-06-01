@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GridCellEditView : UIView <UIGestureRecognizerDelegate>
+@interface GridCellEditView : UIView <UIGestureRecognizerDelegate,UITextFieldDelegate>
 
 @end

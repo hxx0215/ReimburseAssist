@@ -52,6 +52,9 @@
 		[_cancelBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
 		_cancelBtn.layer.borderColor = [[UIColor blackColor] CGColor];
 		_cancelBtn.layer.borderWidth = 0.7f;
+        [_cancelBtn addTarget:self
+                       action:@selector(cancelTextField:)
+             forControlEvents:UIControlEventTouchUpInside];
 		[self addSubview:_cancelBtn];
 
 		_textField = [[UITextField alloc]initWithFrame:CGRectMake(0, 0, 200, 30)];
@@ -61,6 +64,7 @@
 		_textField.backgroundColor = [UIColor colorWithRed:.9 green:.9 blue:.9 alpha:1.0];
 		_textField.layer.masksToBounds = YES;
 		_textField.textAlignment = NSTextAlignmentRight;
+        _textField.delegate = self;
 		[self addSubview:_textField];
 	}
 	return self;
@@ -75,8 +79,11 @@
 }
 
 - (void)resetTextField:(id)sender {
+    _textField.text = @"";
 }
-
+- (void)cancelTextField:(id)sender{
+    [_textField resignFirstResponder];
+}
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
 	NSLog(@"%@:%@", self, NSStringFromCGPoint([gestureRecognizer locationInView:self]));
 	CGPoint touchPoint = [gestureRecognizer locationInView:self];
@@ -87,5 +94,24 @@
 		return YES;
 	return NO;
 }
-
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    NSLog(@"touch!!!");
+}
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    [self offsetYMove:-60];
+    return YES;
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    [self offsetYMove:60];
+    return YES;
+}
+- (void)offsetYMove:(CGFloat)y
+{
+    CGRect frame = self.frame;
+    frame.origin.y +=y;
+    self.frame = frame;
+}
 @end
